@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  color: #ffdd40;
+  height: 100%;
+}
+
+#root {
+  background-color: #1d1d1d;
+  height: 100%;
+}
+
+.navBar-animation::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background-color: transparent;
+  transition: width 1s ease, background-color 1s ease;
+}
+
+.navBar-animation:hover::after {
+  width: 100%;
+  background-color: #ffdd40;
+}
+
+.navbar-toggle-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 24px;
+  left: -650px;
+  opacity: 0;
+  transition: left 1s ease, opacity 1s ease;
+}
+
+.navbar-active-menu {
+  background-color: #181818;
+  left: -2px;
+  width: 100%;
+  opacity: 1;
+}
+
+.App_main_content{
+  height: calc(100% - 80px) !important;
+}
+
+.hireButton {
+  background-color: transparent;
+}
+.hireButton:hover {
+  background-color: #ffdd40;
+}
+
+/* .typingAnimation h1{
+  animation: typingEffectAnimation 2.5s steps(20,end);
+}
+@keyframes typingEffectAnimation {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 100%;
+  }
+} */
