@@ -1,0 +1,18 @@
+.category-text::before,
+.category-text::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 5px;
+    background-color: #ffdd40;
+    bottom: -1px;
+
+}
+
+.category-text::after {
+    right: 0;
+}
+
+.category-text::before {
+    left: 0;
+}

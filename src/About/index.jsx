@@ -10,8 +10,8 @@ const About = () => {
     { label: "Name", value: "Aman Chauhan" },
     { label: "Age", value: "23" },
     { label: "Address", value: "Ahmedabad, Gujarat" },
-    { label: "E-Mail", value: "test123@gmail.com" },
-    { label: "Contact No.", value: "+91 910211323" }
+    { label: "E-Mail", value: "amanchauhan91044@gmail.com" },
+    { label: "Contact No.", value: "+91 9102113237" }
   ]
   return (
     <section className='h-full bg-theme-background-color'>
@@ -31,7 +31,7 @@ const About = () => {
                 transform: "translateX(0px)"
               }}>
               <h3 className='mb-3 text-3xl font-semibold text-theme-main-color '>Front end Developer</h3>
-              <p className='text-theme-sub-text-color text-3xl leading-10 pb-4 border-b border-dashed border-theme-main-color'>
+              <p className='text-theme-sub-text-color text-2xl leading-10 pb-4 border-b border-dashed border-theme-main-color'>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s
                 standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
                 standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
@@ -50,22 +50,22 @@ const About = () => {
                 transform: "translateX(0px)"
               }}>
               <h3 className='my-3 text-3xl font-semibold text-theme-main-color'>Personal Information</h3>
-              <ul>
+              <>
                 {profileSummary.map((summary, index) => (
-                  <li key={index} className='tracking-widest mb-4'>
-                    <span className='text-2xl font-semibold tracking-widest border-b-2 border-theme-main-color relative inline-block pb-[1px] text-theme-sub-text-color'>
+                  <ul key={index} className='mb-4'>
+                    <li className='text-2xl font-semibold tracking-widest border-b-2 border-theme-main-color relative inline-block pb-[1px] text-theme-sub-text-color'>
                       {summary.label}
-                    </span>
-                    <span className='ml-6 text-2xl font-semibold tracking-widest relative inline-block pb-[1px] text-theme-sub-text-color'>
+                    </li>
+                    <li className='ml-6 text-2xl font-semibold tracking-widest relative inline-block pb-[1px] text-theme-sub-text-color'>
                       {summary.value}
-                    </span>
-                  </li>
+                    </li>
+                  </ul>
                 ))}
-              </ul>
+              </>
             </Animate>
           </div>
         </div>
-        <div className='w-[50%] flex justify-center items-center '>
+        <div className='md:w-[50%] w-full flex justify-center items-center md:mb-0 mb-8'>
           <Animate
             play
             duration={2}

@@ -19,30 +19,30 @@ const Navbar = () => {
     // const handleOpenedMenu = () => setToggleMenu(false)
 
     return (
-        <div className ='p-5 h-20 bg-theme-background-color z-50 sticky '>
-            <nav className='flex justify-between relative'>
+        <div className='py-5 px-6 h-24 bg-theme-nav-background-color z-50 sticky '>
+            <nav className='flex justify-between relative h-full'>
                 <div>
-                    <Link to={"/"} className=''>
-                        <FaReact size={30} className='cursor-pointer' />
+                    <Link to={"/"} className='flex items-center h-full'>
+                        <FaReact size={35} className='cursor-pointer' />
                     </Link>
                 </div>
-                <ul className='hidden gap-14 md:relative absolute md:flex md:top-2 top-[40px] '>
+                <ul className='hidden gap-14 lg:relative lg:flex items-center justify-center'>
                     {navData.map((navbar) => (
-                        <li className='lg:text-xl lg:font-semibold text-base  font-medium navBar-animation' key={navbar.label}>
+                        <li className='text-3xl font-medium navBar-animation' key={navbar.label}>
                             <Link to={navbar.to}>
                                 {navbar.label}
                             </Link>
                         </li>
                     ))}
                 </ul>
-                <button className='cursor-pointer flex md:hidden' onClick={handleToggleMenu} aria-expanded={toggleMenu} aria-label="Toggle navigation">
+                <button className='cursor-pointer flex lg:hidden' onClick={handleToggleMenu} aria-expanded={toggleMenu} aria-label="Toggle navigation">
                     {toggleMenu ? <HiX size={30} /> : <FaBars size={30} />}
                 </button>
             </nav>
 
-            <ul className={`md:hidden gap-10 py-3 relative flex navbar-toggle-menu ${toggleMenu ? 'navbar-active-menu' : ""}`}>
+            <ul className={`lg:hidden gap-10 py-3 relative flex navbar-toggle-menu ${toggleMenu ? 'navbar-active-menu' : ""}`}>
                 {navData.map((navbar,index) => (
-                    <li className='lg:text-xl py-1  lg:font-semibold text-base font-medium navBar-animation text-theme-main-color' key={index}>
+                    <li className='py-1 lg:font-semibold text-lg font-semibold navBar-animation text-theme-main-color' key={index}>
                         <Link to={navbar.to} onClick={handleToggleMenu}>
                             {navbar.label}
                         </Link>

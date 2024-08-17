@@ -1,10 +1,10 @@
-import { BsInfoCircleFill } from 'react-icons/bs'
+import { RiContactsBook3Line } from 'react-icons/ri'
 import PageHeader from '../pageHeaderContent/PageHeader'
 
 const Contact = () => {
   return (
     <section>
-      <PageHeader header_Text="Contact Me" icon={<BsInfoCircleFill size={30} />} />
+      <PageHeader header_Text="Contact Me" icon={<RiContactsBook3Line size={30} />} />
 
     </section>
   )

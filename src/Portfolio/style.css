@@ -1,0 +1,40 @@
+.overLay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5 ease;
+    background-color: #ffdd40;
+}
+
+.innerOverLay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    white-space: normal;
+}
+
+:hover .overLay:hover {
+    opacity: 0.95;
+}
+
+.typingAnimation,
+p {
+    animation: typingEffect 1s steps(30, end);
+}
+
+@keyframes typingEffect {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}

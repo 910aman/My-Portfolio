@@ -62,7 +62,7 @@ const ParticlesComponent = () => {
             },
             particles: {
                 color: {
-                    value: "#FFFFFF",
+                    value: "#ffdd40",
                 },
                 links: {
                     color: "#FFFFFF",
@@ -78,12 +78,13 @@ const ParticlesComponent = () => {
                         default: "bounce",
                     },
                     random: true,
-                    speed: 1,
+                    speed: 10,
                     straight: false,
                 },
                 number: {
                     density: {
                         enable: true,
+                        height: 900,
                     },
                     value: 150,
                 },
@@ -94,7 +95,7 @@ const ParticlesComponent = () => {
                     type: "circle",
                 },
                 size: {
-                    value: { min: 1, max: 3 },
+                    value: { min: 2, max: 5 },
                 },
             },
             detectRetina: true,

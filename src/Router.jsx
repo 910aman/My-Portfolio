@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { BrowserRouter, Route, Routes, } from "react-router-dom"
 import About from './About'
 import Home from './Home/index'
 import Resume from './Resume'
@@ -15,12 +15,14 @@ import './App.css';
 
 function Routers() {
 
-
+    // const location = useLocation();
+    // const routeHome = location.pathname === "/";
 
     return (
         <div className="font-robo-fonts max-h-max">
             <BrowserRouter>
                 <Navbar />
+                {/* {routeHome && <ParticlesComponent />} */}
                 <div className="App_main_content">
                     <Routes>
                         <Route path="/" element={<Home />} />

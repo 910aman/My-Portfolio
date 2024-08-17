@@ -6,25 +6,32 @@ export default {
   ],
   theme: {
     fontFamily: {
-      "robo-fonts": "Roboto Slab",
+      "robo-fonts": ["Roboto Slab", "serif"],
     },
     colors: {
       "theme-background-color": "#1d1d1d",
       "theme-main-color": "#ffdd40",
       "theme-sub-text-color": "#fff",
       "theme-nav-background-color": "#181818",
-      "theme-bg-transparent":"transparent"
+      "theme-bg-transparent": "transparent"
     },
     extend: {
-      animation: {
-        typewriter: "typewriter 10s steps(40) forwards"
-      },
       keyframes: {
-        typewriter: {
-          from: { left: 0 },
-          to: { left: "100%"},
-        }
-      }
+        typingEffect: {
+          '0%': { width: '0%' },
+          '100%': { width: '100%' },
+        },
+      },
+      animation: {
+        typingEffect: 'typingEffect 1s steps(30, end)',
+        // typewriter: "typewriter 10s steps(40) forwards"
+      },
+      // keyframes: {
+      //   typewriter: {
+      //     from: { left: 0 },
+      //     to: { left: "100%" },
+      //   }
+      // }
 
     },
   },

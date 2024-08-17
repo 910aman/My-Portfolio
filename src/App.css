@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 * {
+  font-family: "Roboto Slab", serif;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -41,7 +43,7 @@ body {
   width: 100%;
   position: absolute;
   top: 24px;
-  left: -650px;
+  left: -750px;
   opacity: 0;
   transition: left 1s ease, opacity 1s ease;
 }
@@ -53,13 +55,14 @@ body {
   opacity: 1;
 }
 
-.App_main_content{
-  height: calc(100% - 80px) !important;
+.App_main_content {
+  height: calc(100% - 100px) !important;
 }
 
 .hireButton {
   background-color: transparent;
 }
+
 .hireButton:hover {
   background-color: #ffdd40;
 }
