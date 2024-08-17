@@ -31,7 +31,7 @@ const About = () => {
                 transform: "translateX(0px)"
               }}>
               <h3 className='mb-3 text-3xl font-semibold text-theme-main-color '>Front end Developer</h3>
-              <p className='text-theme-sub-text-color text-2xl leading-10 pb-4 border-b border-dashed border-theme-main-color'>
+              <p className='text-theme-sub-text-color md:text-2xl text-lg leading-8 sm:leading-10 pb-4 border-b border-dashed border-theme-main-color'>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s
                 standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
                 standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
@@ -52,11 +52,11 @@ const About = () => {
               <h3 className='my-3 text-3xl font-semibold text-theme-main-color'>Personal Information</h3>
               <>
                 {profileSummary.map((summary, index) => (
-                  <ul key={index} className='mb-4'>
-                    <li className='text-2xl font-semibold tracking-widest border-b-2 border-theme-main-color relative inline-block pb-[1px] text-theme-sub-text-color'>
+                  <ul key={index} className='mb-4 '>
+                    <li className='md:text-2xl sm:text-lg text-base font-semibold tracking-widest border-b-2 border-theme-main-color relative inline-block pb-[1px] text-theme-sub-text-color'>
                       {summary.label}
                     </li>
-                    <li className='ml-6 text-2xl font-semibold tracking-widest relative inline-block pb-[1px] text-theme-sub-text-color'>
+                    <li className='ml-6 md:text-2xl sm:text-lg text-base whitespace-normal font-semibold tracking-widest relative inline-block pb-[1px] text-theme-sub-text-color'>
                       {summary.value}
                     </li>
                   </ul>
@@ -77,16 +77,16 @@ const About = () => {
               transform: "translateX(0px)"
             }}>
             <div className='service_wrapper_content '>
-              <div className='icons '>
+              <div className='icons icon-small'>
                 <FaDev size={60} className='text-theme-main-color' />
               </div>
-              <div className='icons'>
+              <div className='icons icon-small'>
                 <FaDatabase size={60} className='text-theme-main-color' />
               </div>
-              <div className='icons'>
+              <div className='icons icon-small'>
                 <DiAndroid size={60} className='text-theme-main-color' />
               </div>
-              <div className='icons'>
+              <div className='icons icon-small'>
                 <DiApple size={60} className='text-theme-main-color' />
               </div>
             </div>

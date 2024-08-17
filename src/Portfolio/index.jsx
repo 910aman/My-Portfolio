@@ -23,7 +23,7 @@ function App() {
   return (<section>
     <PageHeader header_Text="My Portfolio" icon={<FaChartBar size={30} />} />
     <div className='h-full bg-theme-background-color p-4 sm:p-6'>
-      <ul className='border border-dashed border-theme-main-color rounded-3xl text-center flex flex-wrap justify-center md:h-16 sm:w-fit w-full inline-block'>
+      <ul className='border border-dashed border-theme-main-color rounded-3xl text-center flex-wrap justify-center md:h-16 sm:w-fit w-full inline-block'>
         {Filters.map((filter) => (
           <li
             onClick={() => onHandleFilter(filter.id)}

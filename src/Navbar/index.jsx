@@ -35,14 +35,14 @@ const Navbar = () => {
                         </li>
                     ))}
                 </ul>
-                <button className='cursor-pointer flex lg:hidden' onClick={handleToggleMenu} aria-expanded={toggleMenu} aria-label="Toggle navigation">
+                <button className='cursor-pointer px-2 lg:hidden' onClick={handleToggleMenu} aria-expanded={toggleMenu} aria-label="Toggle navigation">
                     {toggleMenu ? <HiX size={30} /> : <FaBars size={30} />}
                 </button>
             </nav>
 
             <ul className={`lg:hidden gap-10 py-3 relative flex navbar-toggle-menu ${toggleMenu ? 'navbar-active-menu' : ""}`}>
-                {navData.map((navbar,index) => (
-                    <li className='py-1 lg:font-semibold text-lg font-semibold navBar-animation text-theme-main-color' key={index}>
+                {navData.map((navbar, index) => (
+                    <li className='py-1 first:py-3 lg:font-semibold text-lg font-semibold navBar-animation text-theme-main-color' key={index}>
                         <Link to={navbar.to} onClick={handleToggleMenu}>
                             {navbar.label}
                         </Link>
