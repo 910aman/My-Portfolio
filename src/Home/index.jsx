@@ -8,7 +8,7 @@ import './style.css'
 function App() {
   const navigate = useNavigate();
   const handleHireMeButton = () => navigate("/contact");
-  const typeWriting = ["Front end Developer", "ReactJS", "Typescript"]
+  const typeWriting = ["Front end Developer ", "ReactJS  ", "Typescript  "]
 
   return (
     <div>
@@ -21,7 +21,7 @@ function App() {
           <TypeAnimation sequence={typeWriting} wrapper="span"
             cursor={true}
             speed={40}
-            deletionSpeed={10}
+            deletionSpeed={0}
             repeat={Infinity} />
           {/* // style={{ fontSize: '2em', display: 'inline-block' }} /> */}
         </h1>
