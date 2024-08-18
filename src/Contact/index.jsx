@@ -29,11 +29,11 @@ const Contact = () => {
           <div className='mt-14'>
             <div className='md:grid md:grid-cols-2 gap-12 md:mb-10 flex flex-col '>
               <div className='relative'>
-                <input required type="text" name='inputName' className='inputName h-16 w-full border-2 border-theme-main-color px-4 py-3 transition-all duration-500 ease relative bg-theme-bg-transparent text-theme-sub-text-color focus:border-theme-main-color' />
-                <label htmlFor='inputName' className='labelName font-medium absolute top-3 left-4 transition-all duration-200 ease text-theme-sub-text-color text-xl'>Name</label>
+                <input required type="text" name='inputUser' className='inputName h-16 w-full border-2 border-theme-main-color px-4 py-3 transition-all duration-500 ease relative bg-theme-bg-transparent text-theme-sub-text-color focus:border-theme-main-color' />
+                <label htmlFor='inputUser' className='labelName font-medium absolute top-3 left-4 transition-all duration-200 ease text-theme-sub-text-color text-xl'>Name</label>
               </div>
               <div className='relative'>
-                <input required type="email" name='inputEmail' className='inputEmail h-16 w-full border-2 border-theme-main-color px-4 py-3 transition-all duration-500 ease-linear relative bg-theme-bg-transparent text-theme-sub-text-color focus:border-theme-main-color' />
+                <input required type="text" name='inputEmail' className='inputEmail h-16 w-full border-2 border-theme-main-color px-4 py-3 transition-all duration-500 ease-linear relative bg-theme-bg-transparent text-theme-sub-text-color focus:border-theme-main-color' />
                 <label htmlFor='inputEmail' className='labelEmail font-medium absolute top-3 left-4 transition-all duration-200 ease text-theme-sub-text-color text-xl'>E - Mail</label>
               </div>
               <div className='relative'>

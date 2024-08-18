@@ -22,20 +22,13 @@
 .inputDescription:focus {
     outline: none;
 }
+.inputEmail:focus+.labelEmail,
+.inputDescription:focus+.labelDescription,
+.inputName:focus+.labelName,
 
-.inputName:focus+.labelName {
-    font-size: 20px;
-    top: -27px;
-    left: 0px;
-}
-
-.inputEmail:focus+.labelEmail {
-    font-size: 20px;
-    top: -27px;
-    left: 0px;
-}
-
-.inputDescription:focus+.labelDescription {
+.inputEmail:valid+.labelEmail,
+.inputDescription:valid+.labelDescription,
+.inputName:valid+.labelName {
     font-size: 20px;
     top: -27px;
     left: 0px;
