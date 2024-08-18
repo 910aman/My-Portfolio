@@ -11,13 +11,12 @@ const About = () => {
     { label: "Age", value: "23" },
     { label: "Address", value: "Ahmedabad, Gujarat" },
     { label: "E-Mail", value: "amanchauhan91044@gmail.com" },
-    { label: "Contact No.", value: "+91 9102113237" }
+    { label: "Contact", value: "+91 9102113237" }
   ]
   return (
     <section className='h-full bg-theme-background-color'>
       <PageHeader header_Text="About Me" icon={<BsInfoCircleFill size={30} />} />
-
-      <div className='p-5 flex gap-7 w-full md:flex-row flex-col'>
+      <div className='p-5 w-screen flex md:gap-7 gap-12 md:flex-row flex-col'>
         <div className='md:w-[50%] '>
           <div className=''>
             <Animate
@@ -56,7 +55,7 @@ const About = () => {
                     <li className='md:text-2xl sm:text-lg text-base font-semibold tracking-widest border-b-2 border-theme-main-color relative inline-block pb-[1px] text-theme-sub-text-color'>
                       {summary.label}
                     </li>
-                    <li className='ml-6 md:text-2xl sm:text-lg text-base whitespace-normal font-semibold tracking-widest relative inline-block pb-[1px] text-theme-sub-text-color'>
+                    <li className='sm:ml-6 ml-2 md:text-2xl sm:text-lg text-base whitespace-normal font-semibold tracking-widest relative inline-block pb-[1px] text-theme-sub-text-color'>
                       {summary.value}
                     </li>
                   </ul>
@@ -65,7 +64,7 @@ const About = () => {
             </Animate>
           </div>
         </div>
-        <div className='md:w-[50%] w-full flex justify-center items-center md:mb-0 mb-8'>
+        <div className='md:w-[50%] w-full flex justify-center items-center md:pb-0 pb-20'>
           <Animate
             play
             duration={2}

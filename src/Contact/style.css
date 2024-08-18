@@ -1,0 +1,42 @@
+.title-text::before,
+.title-text::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 5px;
+    background-color: #ffdd40;
+    bottom: -1px;
+
+}
+
+.title-text::after {
+    right: 0;
+}
+
+.title-text::before {
+    left: 0;
+}
+
+.inputName:focus,
+.inputEmail:focus,
+.inputDescription:focus {
+    outline: none;
+}
+
+.inputName:focus+.labelName {
+    font-size: 20px;
+    top: -27px;
+    left: 0px;
+}
+
+.inputEmail:focus+.labelEmail {
+    font-size: 20px;
+    top: -27px;
+    left: 0px;
+}
+
+.inputDescription:focus+.labelDescription {
+    font-size: 20px;
+    top: -27px;
+    left: 0px;
+}

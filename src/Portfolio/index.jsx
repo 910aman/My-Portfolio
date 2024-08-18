@@ -27,7 +27,7 @@ function App() {
         {Filters.map((filter) => (
           <li
             onClick={() => onHandleFilter(filter.id)}
-            className={`md:text-2xl md:font-medium md:px-6 cursor-pointer md:py-4 py-2 px-4 inline-block relative uppercase flex-wrap text-theme-sub-text-color transition-all duration-500 ease text-lg font-normal rounded-3xl ${filter.id === filterList ? "bg-theme-main-color text-theme-nav-background-color font-semibold" : ""}`}
+            className={`md:text-2xl md:font-medium md:px-6 cursor-pointer md:py-4 py-2 px-4 inline-block relative uppercase flex-wrap text-theme-sub-text-color transition-all duration-500 ease text-lg font-normal rounded-3xl ${filter.id === filterList ? "bg-theme-main-color text-[#000] font-semibold" : ""}`}
             key={filter.id}
           >
             {filter.label}
