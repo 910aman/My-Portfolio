@@ -34,7 +34,7 @@ const Skills = () => {
               <h3 className='category-text inline-block text-nowrap text-theme-sub-text-color text-xl md:text-2xl font-medium leading-5 relative uppercase px-3 py-4 border-b-2 border-theme-main-color'>
                 {category}
               </h3>
-              <div className='flex flex-col gap-12 mt-8'>
+              <div className='flex flex-col md:gap-12 gap-6 md:mt-8 mt-5 lg:mb-0 mb-10'>
                 {groupedSkills[category].map((data, index) => (
                   <AnimateKeyframes
                     play

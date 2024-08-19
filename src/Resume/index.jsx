@@ -11,7 +11,7 @@ const Contact = () => {
     <section>
       <PageHeader header_Text="My Resume" icon={<FaUserTie size={30} />} />
       <div className='relative px-4 flex md:flex-row flex-col w-full mt-5 h-full bg-theme-background-color '>
-        <div className='md:w-1/2 w-full flex flex-col'>
+        <div className='md:w-1/2 w-full flex flex-col mb-0 md:mb-10'>
           <div className='flex justify-center'>
             <h3 className='category-text text-nowrap text-theme-sub-text-color text-xl md:text-3xl font-medium leading-5 relative uppercase px-3 py-4 border-b-2 border-theme-main-color'>
               Experince
@@ -47,7 +47,7 @@ const Contact = () => {
 
           </VerticalTimeline>
         </div>
-        <div className='md:w-1/2 w-full flex flex-col'>
+        <div className='md:w-1/2 w-full flex flex-col md:mb-0 mb-10'>
           <div className='flex justify-center'>
             <h3 className='category-text text-nowrap text-theme-sub-text-color text-xl md:text-3xl font-medium leading-5 relative uppercase px-3 py-4 border-b-2 border-theme-main-color'>
               Education

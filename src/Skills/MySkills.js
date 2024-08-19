@@ -11,11 +11,11 @@ export const frontEndSkills = [
 				count: "65",
 			},
 			{
-				skillName: "React",
+				skillName: "React JS",
 				count: "70",
 			},
 			{
-				skillName: "Tailwind",
+				skillName: "Tailwind CSS",
 				count: "70",
 			},
 			{
@@ -30,8 +30,8 @@ export const backEndSkills = [
 		label: 'BACK END',
 		data: [
 			{
-				skillName: "NodeJS",
-				count: "74",
+				skillName: "Express JS",
+				count: "54",
 			},
 			{
 				skillName: "Python",
@@ -58,7 +58,7 @@ export const DatabaseSkills = [
 			},
 			{
 				skillName: "Oracle",
-				count: "82",
+				count: "62",
 			},
 		]
 	}

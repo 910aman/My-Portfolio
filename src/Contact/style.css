@@ -22,14 +22,33 @@
 .inputDescription:focus {
     outline: none;
 }
+
 .inputEmail:focus+.labelEmail,
 .inputDescription:focus+.labelDescription,
 .inputName:focus+.labelName,
-
 .inputEmail:valid+.labelEmail,
 .inputDescription:valid+.labelDescription,
 .inputName:valid+.labelName {
     font-size: 20px;
     top: -27px;
     left: 0px;
+}
+@media screen and (max-width:768px) {
+
+    .inputEmail:focus+.labelEmail,
+    .inputDescription:focus+.labelDescription,
+    .inputName:focus+.labelName,
+    .inputName:valid+.labelName,
+    .inputDescription:valid+.labelDescription,
+    .inputEmail:valid+.labelEmail {
+        font-size: 15px;
+        top: -22px;
+        left: 0px;
+    }
+
+    .labelDescription,
+    .labelEmail,
+    .labelName {
+        font-size: 12px;
+    }
 }

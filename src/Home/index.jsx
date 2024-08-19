@@ -15,7 +15,7 @@ function App() {
       <ParticlesComponent />
       <section className="relative flex flex-col justify-center items-center HomeStyle">
 
-        <h1 className="lg:text-7xl lg:font-medium lg:leading-[5rem] m-0 whitespace-nowrap sm:text-4xl md:text-6xl md:leading-[4rem] text-2xl">
+        <h1 className="lg:text-7xl lg:font-medium lg:leading-[5rem] m-0 whitespace-nowrap sm:text-4xl md:text-6xl md:leading-[4rem] text-3xl">
           Hello, I&apos;m Aman
           <br />
           <TypeAnimation sequence={typeWriting} wrapper="span"

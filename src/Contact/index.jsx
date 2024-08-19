@@ -81,19 +81,20 @@ const Contact = () => {
               <div className='md:grid md:grid-cols-2 gap-12 md:mb-10 flex flex-col '>
                 <div className='relative'>
                   <input required type="text" name='from_name' className='inputName h-16 w-full border-2 border-theme-main-color px-4 py-3 transition-all duration-500 ease relative bg-theme-bg-transparent text-theme-sub-text-color focus:border-theme-main-color' />
-                  <label htmlFor='from_name' className='labelName font-medium absolute top-3 left-4 transition-all duration-200 ease text-theme-sub-text-color text-xl'>Name</label>
+                  <label htmlFor='from_name' className='labelName font-medium absolute top-3 left-4 transition-all duration-200 ease text-theme-sub-text-color'>Name</label>
                 </div>
                 <div className='relative'>
                   <input required type="text" name='from_email' className='inputEmail h-16 w-full border-2 border-theme-main-color px-4 py-3 transition-all duration-500 ease-linear relative bg-theme-bg-transparent text-theme-sub-text-color focus:border-theme-main-color' />
-                  <label htmlFor='from_email' className='labelEmail font-medium absolute top-3 left-4 transition-all duration-200 ease text-theme-sub-text-color text-xl'>E - Mail</label>
+                  <label htmlFor='from_email' className='labelEmail font-medium absolute top-3 left-4 transition-all duration-200 ease text-theme-sub-text-color '>E - Mail</label>
                   {emailError && <p className='text-red-500 whitespace-nowrap'>{emailError}</p>}
                 </div>
                 <div className='relative'>
                   <textarea required name='message' className='inputDescription min-h-20 max-h-32 h-full w-full border-2 border-theme-main-color px-4 py-3 transition-all duration-500 ease-linear relative bg-theme-bg-transparent text-theme-sub-text-color focus:border-theme-main-color' />
-                  <label htmlFor='message' className='labelDescription font-medium absolute top-3 left-4 transition-all duration-200 ease text-theme-sub-text-color text-xl'>
+                  <label htmlFor='message' className='labelDescription font-medium absolute top-3 left-4 transition-all duration-200 ease text-theme-sub-text-color'>
                     What are Requirements?
                   </label>
                 </div>
+
               </div>
               <div className='w-full flex flex-col gap-5 md:mt-2 mt-6'>
                 {formReq === 'OK' &&
@@ -103,7 +104,7 @@ const Contact = () => {
                 }
                 {formReq === 'FAILED' &&
                   <p className='whitespace-nowrap text-theme-sub-text-color'>
-                    Message failed to send ❌
+                    Message failed to Send ❌
                   </p>
                 }
                 <button className='md:w-fit w-full px-8 py-2 border-2 border-theme-main-color text-2xl font-semibold hover:bg-theme-main-color hover:text-theme-background-color'>
