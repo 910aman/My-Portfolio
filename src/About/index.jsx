@@ -4,14 +4,15 @@ import { Animate } from 'react-simple-animate'
 import { FaDatabase, FaDev } from 'react-icons/fa'
 import { DiAndroid, DiApple } from 'react-icons/di'
 import './style.css'
+import { Link } from 'react-router-dom'
 
 const About = () => {
   const profileSummary = [
     { label: "Name", value: "Aman Chauhan" },
     { label: "Age", value: "23" },
     { label: "Address", value: "Ahmedabad, Gujarat" },
-    { label: "E-Mail", value: "amanchauhan91044@gmail.com" },
-    { label: "Contact", value: "+91 9102113237" }
+    { label: "E-Mail", value: "amanchauhan91044@gmail.com", linked: "mailto:amanchauhan91044@gmail.com" },
+    { label: "Contact", value: "+91 1234567899", linked: "tel:1234567899" }
   ]
   return (
     <section className='h-full bg-theme-background-color'>
@@ -56,7 +57,9 @@ const About = () => {
                       {summary.label}
                     </li>
                     <li className='sm:ml-6 ml-2 md:text-2xl sm:text-lg text-base whitespace-normal font-semibold tracking-widest relative inline-block pb-[1px] text-theme-sub-text-color'>
-                      {summary.value}
+                      <Link to={summary?.linked} className={`${summary?.linked ? "hover:underline" : ""}`}>
+                        {summary.value}
+                      </Link>
                     </li>
                   </ul>
                 ))}
